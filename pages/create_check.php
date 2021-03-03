@@ -32,7 +32,7 @@
                         </th>
                         <td>
                             <?php
-                                echo $_SESSION['new_user_id'];
+                                echo $_POST['new_user_id'];
                             ?>
                         </td>
                     </tr>
@@ -42,7 +42,7 @@
                         </th>
                         <td>
                             <?php
-                                echo $_SESSION['new_user_name'];
+                                echo $_POST['new_user_name'];
                             ?>
                         </td>
                     </tr>
@@ -52,12 +52,15 @@
                         </th>
                         <td>
                             <?php
-                                echo $_SESSION['new_user_pass'];
+                                echo $_POST['new_user_pass'];
                             ?>
                         </td>
                     </tr>
                 </table>
                 <div class="submit">
+                    <?php
+                    $_SESSION['user_id'] = "hew2020";
+                    ?>
                     <a href="./create_account.php"><input type="submit" value="戻る" class="button0"></a>
                     <a href="./mypage.php"><input type="submit" value="登録する" class="button"></a>
                 </div>

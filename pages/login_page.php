@@ -17,11 +17,14 @@
         </div>
         <br>
         <div class="login">
-            <form action="#" method="post">
+            <form action="./mypage.php" method="post">
                 <input type="text" placeholder="User ID"   name="user_id" value="hew2020"><br>
                 <input type="password" placeholder="Password"   name="user_password" value="hew2020"><br>
-                <a href="./mypage.php"><button type="submit">Login</button></a>
+                <button type="submit">Login</button>
                 <?php
+                    $_SESSION['user_id'] = "hew2020";
+                    $_SESSION['user_pass'] = "hew2020";
+
                     if (isset($_SESSION['err'])) {
                         echo "<br>".$_SESSION['err'];
                         $_SESSION['err'] = "";
