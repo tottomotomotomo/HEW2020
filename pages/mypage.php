@@ -37,7 +37,8 @@
               <div class="name">
                 <p class="name_midasi">user name</p>
                 <?php
-                  echo "<p class='name_user'>".$_SESSION['login_user_name']."</p>";
+                  // echo "<p class='name_user'>".$_SESSION['login_user_name']."</p>";
+                  echo "<p class='name_user'>HEW2020</p>";
                 ?>
               </div>
 
@@ -45,13 +46,13 @@
               <div class="id">
                 <p class="id_midasi">user id</p>
                 <?php
-                  echo "<p class='id_user'>".$_SESSION['login_user_id']."</p>";
+                  echo "<p class='id_user'>".$_SESSION['user_id']."</p>";
                   ?>
               </div>
 
               <div class="setting">
                 <a href="./setting.php"><p class="change">設定変更</p></a>
-                <a href="../process/logout.php"><p class="change">ログアウト</p></a>
+                <a href="../index.php"><p class="change">ログアウト</p></a>
               </div>
             </div>
           </div>

@@ -53,7 +53,8 @@
                         </th>
                         <td>
                         <?php
-                            echo '<input type="text" name="update_name" placeholder="Username" value="'.$_SESSION['login_user_name'].'" size="32">';
+                            // echo '<input type="text" name="update_name" placeholder="Username" value="'.$_SESSION['login_user_name'].'" size="32">';
+                            echo '<input type="text" name="update_name" placeholder="Username" value="HEW2020 size="32">';
                         ?>
                         </td>
                     </tr>
@@ -62,7 +63,9 @@
                             パスワード
                         </th>
                         <td>
-                            <input type="password" name="pass" placeholder="Password" value="" size="32">
+                            <?php
+                                echo '<input type="password" name="pass" placeholder="Password" value="'.$_SESSION["user_password"].'" size="32">';
+                            ?>
                         </td>
                     </tr>
                 </table>

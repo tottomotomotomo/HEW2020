@@ -17,7 +17,7 @@
         </div>
         <br>
         <div class="login">
-            <form action="../process/login.php" method="post">
+            <form action="./mypage.php" method="post">
                 <input type="text" placeholder="User ID"   name="user_id" value="hew2020"><br>
                 <input type="password" placeholder="Password"   name="user_password" value="hew2020"><br>
                 <button type="submit">Login</button>
