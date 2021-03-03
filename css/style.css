@@ -1,0 +1,82 @@
+@charset "utf-8";
+body{
+  width: 100%;
+  height: 678px;
+  margin: 0;
+  padding: 0;
+}
+
+.index_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.index_link{
+  display: flex;
+}
+
+.index_logo{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 558px;
+  top: 120px;
+  border-radius: 170px;
+  background-image: url(../img/logo_circle.png);
+  background-size: contain;
+}
+
+.index_to_signup,
+.index_to_login{
+  width: 300px;
+  height: 240px;
+  margin-top: 300px;
+  background: #F4F4F4;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;  
+}
+
+.index_to_signup{
+  margin-left: 87px;
+}
+.index_to_login{
+  margin-left: 592px;
+}
+
+.index_line{
+  content: "";
+  position: absolute;
+  width: 299px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.index_anc{
+  text-align: center;  
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.index_anc p{
+  font-size: 36px;
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+  letter-spacing: 0.1em;
+}
+
+.index_txt{
+  font-size: 24px;
+  margin-top: 64px;
+  text-align: center;
+  letter-spacing: 0.1em;  
+}
+
+/* ========================================
+            chat.js
+======================================== */

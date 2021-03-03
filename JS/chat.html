@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sync note chat</title>
+    <style>
+      header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 64px;
+        background-color: #5a0909;
+        overflow: hidden; /*内容がボックスに収まらない場合、収まらない部分    は非表示となる*/
+        z-index: 5;
+      }
+      .logo {
+        width: 200px;
+        height: 64px;
+        margin: 0;
+        position: absolute;
+        left: 33px;
+      }
+      .logo:hover{
+        opacity: 0.5;
+      }
+      #room {
+        width: 100%;
+        height: 620px;
+        margin-top: 64px;
+        overflow: scroll;
+        background-color: rgb(208, 212, 216);
+      }
+      .out {
+        margin: 12px auto auto 1200px;
+        background-color: brown;
+        width: 66px;
+        height: 38px;
+        color: white;
+        border-radius: 8px;
+      }
+      .outbtn {
+        margin: 0;
+        padding: 0;
+      }
+      .out:hover {
+        opacity: 0.8;
+      }
+      form {
+        padding: 3px;
+        position: fixed;
+        bottom: -55px;
+        width: 85%;
+        margin-left: 10%;
+      }
+      form input {
+        border: 2px black solid;
+        border-radius: 7px;
+        padding: 10px;
+        width: 85%;
+        margin-right: 0.5%;
+        margin-bottom: 5%;
+      }
+      form button {
+        width: 9%;
+        border-radius: 7px;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 10px;
+      }
+      #messages {
+        list-style-type: none;
+        margin-left: 10%;
+        width: 85%;
+        padding: 0;
+      }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="../images/logo2_white.png" alt="logo" class="logo">
+      <a href="../pages/mypage.php" class="outbtn"><button class="out" type="button">leave</button></a>
+    </header>
+
+    <!-- チャットの入力を保存→DB
+    text areaのvalueに入れる -->
+
+    <div id="room">
+      <ul id="messages"></ul>
+    </div>
+    <form action="">
+      <input id="m" autocomplete="off" /><button class="btn btn-primary">Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function () {
+        var socket = io();
+        $('form').submit(function(e){
+          e.preventDefault(); // prevents page reloading
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+        });
+      });
+    </script>
+  </body>
+</html>

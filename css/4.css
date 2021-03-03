@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body{
+  margin: 0;
+  padding: 0;
+  font: 16px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;	/*フォント種類*/
+  background-image: url(../images/index.png);
+}
+
+
+
+
+
+
+.header{
+  position: absolute;
+  top: 324px;
+  left: 340px;
+}
+
+
+.logo:hover{
+    opacity: 0.5;
+}
+
+
+.login{
+  position: absolute;
+  top: 324px;
+  left: 750px;
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+
+  float: right;
+}
+
+.login input[type=text]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login button[type=submit]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login button[type=submit]:hover{
+  opacity: 0.8;
+}
+
+.login button[type=submit]:active{
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login button[type=submit]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+  /* フッター */
+
+  p {
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  /* background: #222;	背景色 */
+  color: #fff;		/*文字色*/
+  font-size: 85%;		/*文字サイズ*/
+  position: absolute;
+  bottom: 0; /*下に固定*/
+  width: 100%;
+}
+footer a {
+  color: #fff;	/*リンクテキストの文字色*/
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(155, 152, 152);	/*マウスオン時の文字色*/
+}

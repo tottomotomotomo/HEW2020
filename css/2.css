@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;	/*フォント種類*/
+    background-image: url(../images/index.png);
+}
+
+
+
+.textbody {
+    width: 420px;
+    height: 520px;
+    background: rgba(255,255,255, 0.8);
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.logo {
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.textbody input {
+    width: 100%;
+    padding: 0;
+}
+
+
+table {
+    margin-top: 100px;
+}
+
+th {
+    padding: 0;
+    width: 100px;
+}
+
+.submit{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left:154px;
+    /* margin-right:42px; */
+}
+
+.button {
+    background: rgba(255,0,0,0.8);
+    box-shadow    : 6px 6px 3px #666666; 
+    color: #fefefe;
+}
+
+.button:hover {
+    box-shadow    : none;
+    color         : #000066;
+    background    : #ffffff;  
+  }
+
+  /* フッター */
+
+  p {
+      margin: 0;
+      text-align: center;
+  }
+
+  footer {
+	/* clear: both; */
+	text-align: center;
+	/* background: #222;	背景色 */
+	color: #fff;		/*文字色*/
+    font-size: 85%;		/*文字サイズ*/
+    position: fixed;
+    bottom: 0; /*下に固定*/
+    width: 100%;
+}
+footer a {
+	color: #fff;	/*リンクテキストの文字色*/
+	text-decoration: none;
+}
+footer a:hover {
+	color: rgb(155, 152, 152);	/*マウスオン時の文字色*/
+}
+
+
+

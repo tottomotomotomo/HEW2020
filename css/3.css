@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;	/*フォント種類*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    width:1300px; /*基本のサイズ*/
+	margin:0 auto; /*真ん中にレイアウト*/
+}
+
+hr {
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    border-width: 1px 0 0 0;
+    border-top: double;
+    border-color: black;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 62px;
+    color: rgba(255,0,0,0.8);
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.formtable {
+    top: 100px;
+}
+
+input[type=text]{
+    width:300px;
+    height:30px;
+}
+
+input[type=password]{
+    width:300px;
+    height:30px;
+}
+
+.submit{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    /* margin-left: 0px; */
+    /* margin-right:42px; */
+}
+
+.button {
+    background: rgba(255,0,0,0.8);
+    box-shadow    : 3px 3px 1px #666666; 
+    color: #fefefe;
+    margin-left: 24px;
+}
+
+.button:hover {
+    box-shadow    : none;
+    color         : black;
+    background    : #ffffff;  
+}
+
+.button0{
+    background: rgba(7, 3, 236, 0.8);
+    box-shadow    : 3px 3px 1px #666666; 
+    color: #fefefe;
+    margin-right: 58px;
+}
+
+.button0:hover {
+    box-shadow    : none;
+    color         : black;
+    background    : #ffffff;  
+}
+    
+p {
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  /* background: #222;	背景色 */
+  color: #000;		/*文字色*/
+  font-size: 85%;		/*文字サイズ*/
+  position: fixed;
+  bottom: 0; /*下に固定*/
+  width: 100%;
+}
+footer a {
+  color: rgb(8, 8, 8);	/*リンクテキストの文字色*/
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(155, 152, 152);	/*マウスオン時の文字色*/
+}
+

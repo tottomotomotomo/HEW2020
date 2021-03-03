@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    /*フォント種類*/
+}
+
+.wrapper {
+    width: 1300px;
+    /*基本のサイズ*/
+    margin: 0 auto;
+    /*真ん中にレイアウト*/
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.header {
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    border-width: 1px 0 0 0;
+    border-top: double;
+    border-color: black;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 30px;
+}
+
+input[type=password] {
+    width: 300px;
+    height: 30px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button {
+    background: rgba(255, 0, 0, 0.8);
+    box-shadow: 3px 3px 1px #666666;
+    color: #fefefe;
+}
+
+.button:hover {
+    box-shadow: none;
+    color: black;
+    background: #ffffff;
+}
+
+.back_btn {
+    width: 62px;
+    height: 24px;
+    background: rgba(7, 3, 236, 0.8);
+    box-shadow: 3px 3px 1px #666666;
+    margin-right: 58px;
+    border-top: 2px solid rgb(113, 113, 113);
+    border-left: 2px solid rgb(118, 118, 118);
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+}
+
+.back_btn a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.back_btn:hover {
+    box-shadow: none;
+    background: #ffffff;
+    color: black;
+}
+
+.back_btn a:hover {
+    color: black;
+}
+
+.footer {
+    margin: 0;
+}
+
+/* フッター */
+p {
+    margin: 0;
+    text-align: center;;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #000;
+    /*リンクテキストの文字色*/
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(155, 152, 152);
+    /*マウスオン時の文字色*/
+}

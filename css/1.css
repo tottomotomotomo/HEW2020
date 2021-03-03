@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+html,body {height: 100%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;	/*全体の文字色*/
+	font: 16px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;	/*フォント種類*/
+	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #f0f0f0;	/*背景色*/
+	background-image: url(../images/index.png);
+}
+
+h1,h2,p,ul,li {margin: 0px;padding: 0px;}
+ul {list-style-type: none;}
+
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+/* @keyframes opa1 {
+0% {opacity: 0;}
+100% {opacity: 1;}
+} */
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+
+
+/*ヘッダー（一番上の、ロゴやメニューが入っているブロック）
+---------------------------------------------------------------------------*/
+header {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	background: url(../images/index.png) no-repeat center center / cover;	/*背景画像の読み込み*/
+}
+/*ロゴ画像*/
+header #logo img {
+	display: block;
+	width: 40%;	/*画像の幅*/
+	position: absolute;
+	left: 31%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	bottom: 25%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+}
+
+/*メニュー
+---------------------------------------------------------------------------*/
+/*メニューブロック全体への指定*/
+#menubar {
+	position: absolute;
+	bottom: 20%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+/*メニュー１個あたりの指定*/
+#menubar li {
+	display: inline-block;
+	margin: 0 1%;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+#menubar li a {
+	text-decoration: none;display: block;text-align: center;
+	/* font-size: large; */
+	width: 300px;	/*メニューの幅*/
+	color: #fff;	/*文字色*/
+	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
+	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+}
+/*マウスオン時の指定*/
+#menubar li a:hover {
+	border-bottom: 2px solid #fff;	/*下線の幅、線種、色*/
+	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
+}
+
+
+.logo:hover{
+	opacity: 0.5;
+}
+
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+p {
+	margin: 0;
+	text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  /* background: #222;	背景色 */
+  color: #fff;		/*文字色*/
+  font-size: 85%;		/*文字サイズ*/
+  position: fixed;
+  bottom: 0; /*下に固定*/
+  width: 100%;
+}
+footer a {
+  color: #fff;	/*リンクテキストの文字色*/
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(155, 152, 152);	/*マウスオン時の文字色*/
+}
+/*ul.disc,olタグ
+---------------------------------------------------------------------------*/
+ul.disc {
+	list-style: disc;
+	padding: 0 20px 20px 55px;
+}
+ol {
+	padding: 0 20px 20px 42px;
+}
