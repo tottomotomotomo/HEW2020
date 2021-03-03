@@ -20,7 +20,7 @@
             <form action="#" method="post">
                 <input type="text" placeholder="User ID"   name="user_id" value="hew2020"><br>
                 <input type="password" placeholder="Password"   name="user_password" value="hew2020"><br>
-                <button type="submit" href="./mypage.php">Login</button>
+                <a href="./mypage.php"><button type="submit">Login</button></a>
                 <?php
                     if (isset($_SESSION['err'])) {
                         echo "<br>".$_SESSION['err'];
