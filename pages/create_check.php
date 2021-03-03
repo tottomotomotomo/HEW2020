@@ -59,7 +59,7 @@
                 </table>
                 <div class="submit">
                     <a href="./create_account.php"><input type="submit" value="戻る" class="button0"></a>
-                    <a href="../process/insert.php"><input type="submit" value="登録する" class="button"></a>
+                    <a href="./mypage.php"><input type="submit" value="登録する" class="button"></a>
                 </div>
         </div>
     </div>

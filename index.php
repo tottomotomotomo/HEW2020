@@ -13,7 +13,7 @@
     <h1 id="logo"><a href="./index.html"><img src="./images/logo1_white.png" alt="syncnote" class="logo"></a></h1>
     <nav id="menubar">
       <ul>
-        <li><a href="#"><h2>新しく始める</h2></a></li>
+        <li><a href="./pages/create_account.php"><h2>新しく始める</h2></a></li>
         <li><a href="./pages/login_page.php"><h2>ログイン</h2></a></li>
       </ul>
     </nav>

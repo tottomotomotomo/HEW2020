@@ -14,7 +14,7 @@
         session_start();
     ?>
     <div class="textbody">
-        <h1><a href="../index.html"><img src="../images/logo2.png" class="logo" width="300px" height="90px"></a></h1>
+        <h1><a href="../index.php"><img src="../images/logo2.png" class="logo" width="300px" height="90px"></a></h1>
         <div class="formtable">
             <form action="../process/registration.php" method="POST">
                 <table border="0" cellspacing="30">

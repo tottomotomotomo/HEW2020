@@ -10,7 +10,7 @@
 <body>
   <?php
     session_start();
-    if (isset($_SESSION['login_user_id'])) {
+    if (isset($_SESSION['user_id'])) {
       
     }else{
       header('location: ../pages/login_page.php');

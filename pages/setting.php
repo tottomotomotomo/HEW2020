@@ -10,7 +10,7 @@
 <body>
     <?php
     session_start();
-    if (isset($_SESSION['login_user_id'])) {
+    if (isset($_SESSION['user_id'])) {
       
     }else{
       header('location: ../index.html');
@@ -19,11 +19,11 @@
     ?>
     <div class="wrapper">
         <header>
-            <h1><a href="../index.html"><img src="../images/logo2.png" alt="logo" width="300px" class="logo"></a></h1>
+            <h1><a href="../index.php"><img src="../images/logo2.png" alt="logo" width="300px" class="logo"></a></h1>
         </header>
         <hr class="header">
         <div class="textform" align="center">
-            <form action="../process/update.php" method="post" enctype="multipart/form-data">
+            <form action="./mypage.php" method="post" enctype="multipart/form-data">
                 <table border="0" cellspacing="60">
                     <?php
                     echo "<td colspan='2' style='text-align:center'>".$_SESSION['err']."</td>";
