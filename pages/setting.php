@@ -54,7 +54,7 @@
                         <td>
                         <?php
                             // echo '<input type="text" name="update_name" placeholder="Username" value="'.$_SESSION['login_user_name'].'" size="32">';
-                            echo '<input type="text" name="update_name" placeholder="Username" value="HEW2020 size="32">';
+                            echo '<input type="text" name="update_name" placeholder="Username" value="HEW2020" size="32">';
                         ?>
                         </td>
                     </tr>

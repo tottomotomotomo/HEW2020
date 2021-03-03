@@ -59,7 +59,7 @@
 
           <div class="room">
             <?php
-              echo '<a href="../JS/chat.js" class="btn btn-flat"><span>ルーム入室</span></a>';
+              echo '<a href="../JS/chat.html" class="btn btn-flat"><span>ルーム入室</span></a>';
             ?>
           </div>
         </div>
